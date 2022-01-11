@@ -16,9 +16,7 @@ module.exports = {
     ecmaVersion: 2018,
   },
   rules: {
-    "linebreak-style": ["error", "windows"],
-    "prefer-rest-params": "off",
-    "prefer-destructuring": ["error", {"object": true, "array": false}]
+    "linebreak-style": ["error", "windows"]
 
   },
 };

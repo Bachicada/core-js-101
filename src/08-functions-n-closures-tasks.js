@@ -63,8 +63,7 @@ function getPowerFunction(exponent) {
  *   getPolynom(8)     => y = 8
  *   getPolynom()      => null
  */
-function getPolynom() {
-  const args = [...arguments];
+function getPolynom(...args) {
   const power = (x) => {
     let y = '';
 
@@ -73,7 +72,7 @@ function getPolynom() {
     } else if (args.length === 2) {
       y = args[0] * x + args[1];
     } else if (args.length === 1) {
-      y = args[0];
+      y = args[args.length - 1];
     } else if (args.length === 0) {
       y = null;
     }
